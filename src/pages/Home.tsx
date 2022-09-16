@@ -15,6 +15,7 @@ import reactImage from '../static/img/technologies/react.png'
 
 import './Home.scss'
 import Title from '../components/Title/Title'
+import Button from '../components/Button/Button'
 
 export default function Home () {
   return (
@@ -27,6 +28,8 @@ export default function Home () {
           <div className="info">
             <h1>Jakub Złotek</h1>
             <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptatibus odio dolor dicta architecto et suscipit quos aliquam ducimus repellendus?</h2>
+            <Button>Get in touch</Button>
+            <Button mode="soft">More Info</Button>
           </div>
           {/* <div className="more">aa</div> */}
 

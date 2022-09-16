@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import './Navbar.scss'
+import Button from '../Button/Button'
+
 export default function Navbar () {
   const [scrolled, setScrolled] = React.useState(false)
 
@@ -16,10 +18,7 @@ export default function Navbar () {
   }, [])
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
-      {/* <img
-        src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
-        alt=""
-      /> */}
+      <Button size="small">My Resume</Button>
       <ul>
         <li>
           <a href="#" className="hover">Home</a>

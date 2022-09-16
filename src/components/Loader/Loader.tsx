@@ -18,14 +18,17 @@ const showscreen = async (number: number) => {
 
 export default function Loader () {
   useEffect(() => {
-    showscreen(3)
+    // showscreen(3)
+    sleep(1000).then(() => {
+      showscreen(3)
+    })
   }, [])
 
   return (
     <div>
       <div className="loader" id="L1"></div>
       <div className="loader" id="L2"></div>
-      <div className="loader" id="L3"></div>
+      <div className="loader" id="L3"><div className="spin"></div></div>
     </div>
   )
 }

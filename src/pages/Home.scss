@@ -33,6 +33,7 @@ section {
   margin: 0 auto;
   height: 250vh;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     max-width: 100%;
@@ -75,5 +76,33 @@ section {
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden;
+  }
+}
+
+
+
+
+.App-logo {
+  height: 600px;
+  pointer-events: none;
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  fill: red !important;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

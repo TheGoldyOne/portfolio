@@ -13,6 +13,8 @@ import css3Image from '../static/img/technologies/css3.png'
 import sassImage from '../static/img/technologies/sass.png'
 import reactImage from '../static/img/technologies/react.png'
 
+import logo from '../static/reactLogo.svg'
+
 import './Home.scss'
 import Title from '../components/Title/Title'
 import Button from '../components/Button/Button'
@@ -23,6 +25,7 @@ export default function Home () {
       <Loader />
       <div className="bgImage"></div>
       <div className="container">
+        <img src={logo} className="App-logo" alt="React Logo" />
         <Navbar />
         <section className="aboutme">
           <div className="info">

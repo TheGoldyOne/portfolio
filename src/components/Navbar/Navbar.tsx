@@ -6,7 +6,6 @@ export default function Navbar () {
   const [scrolled, setScrolled] = React.useState(false)
 
   const handleScroll = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 66) {
       setScrolled(true)
     } else {

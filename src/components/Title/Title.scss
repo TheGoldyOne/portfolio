@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.title {
+  font-size: 3rem;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+
+  .arrows {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: -.5 rem;
+    color: $themeColor;
+
+    svg {
+      margin-left: -2rem;
+    }
+
+  }
+
+}
